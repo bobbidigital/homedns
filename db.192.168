@@ -1,0 +1,18 @@
+;
+; BIND reverse data file for local loopback interface
+;
+$TTL	604800
+@	IN	SOA	starscream.allthingsdork.com. admin.allthingsdork.com. (
+			      1		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+;nameservers
+	IN	NS	starscream.allthingsdork.com.
+
+14.1	IN	PTR	starscream.allthingsdork.com.	;192.168.1.14
+13.1	IN	PTR	cybertron.allthingsdork.com.	;192.168.1.13
+12.1	IN	PTR	plex.allthingsdork.com.		;192.168.1.12
+15.1	IN	PTR	punch.allthingsdork.com.	;192.168.1.15
